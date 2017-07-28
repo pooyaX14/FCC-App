@@ -24,9 +24,7 @@ function Comment(props) {
       </div>
     </div>
   );
-}
-
-const comment = {
+  const comment = {
   date: new Date(),
   text: 'I hope you enjoy learning React!',
   author: {
@@ -34,6 +32,16 @@ const comment = {
     avatarUrl: 'http://placekitten.com/g/64/64'
   }
 };
+}
+
+// const comment = {
+//   date: new Date(),
+//   text: 'I hope you enjoy learning React!',
+//   author: {
+//     name: 'Hello Kitty',
+//     avatarUrl: 'http://placekitten.com/g/64/64'
+//   }
+// };
 /*ReactDOM.render(
   <Comment
     date={comment.date}

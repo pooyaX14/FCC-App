@@ -1,3 +1,59 @@
+// import React, {Component} from 'react';
+// import ReactDOM from 'react-dom';
+// import Playlist from './playlist';
+
+// class MusicApp extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = { //These are state variables
+//             message: '',
+//             apiKey: '',
+//             name:''
+                playlist:[];
+//         };
+//         //Add any new function if created
+//         this.printName = this.printName.bind(this);
+//     }
+//     printName(){
+//         var myInput = document.getElementById("myInput");
+//         console.log(this);
+//         this.setState({
+//             name:myInput.value
+//         });
+    setSongs(songs) {
+      this.setState({
+        playlist:songs
+      });
+    }
+//       }
+//     // componentDidMount(){
+//     //   this.printName(); //to render printName automatically after rendering the component
+//     // }
+    
+//         displayMessage(){ 
+//         var that = this;
+//         this.setState({
+//             message: "Welcome!"
+//         });
+//     }
+
+//     render() {       
+//         return (
+//             <div  className={this.props.color}>
+//                 Welcome to React Session 91Springboard {this.props.person}!
+//                 <input type="text" placeholder="Enter your name" id="myInput"/>
+//                 <button onClick={this.printName}>Enter</button>
+//                 <h2>Your name is: {this.state.name} </h2>
+//                 <Playlist />
+//             </div>
+//         );
+//     }
+// }
+// var name="Purnima";
+//  ReactDOM.render(<MusicApp person={name}/>,document.getElementById('root'));
+
+// export default MusicApp;
+
 //you can use import statements, like the one below
 //var ReactDom = require("react-dom"); https://codepen.io/markhillard/pen/Hjcwu
 
@@ -9,48 +65,6 @@ import Comment from './Comment';
 
 //import { Playlist } from './playlist.js' ;
 
-// class MusicApp extends React.Component {
- 
-//   render(){
-//     var name="Sara";
-//     return(
-//       <h1>Welcome,  {name} {this.props.lastName}</h1>   
-//     )
-//   }
-// }     
-// // var name="Sara";
-// var lastName="Gupta";
-// ReactDom.render(<MusicApp person={name} lastName={lastName}/>,document.getElementById('root'));
-function Welcome(p) {
-  return <h1>Hello, {p.name}</h1>;
+class MusicApp from React.Component {
+
 }
-
-function App(){
-  // const { comment } = this.props;
-  return(
-      <div>
-        <Welcome name="Purnima" />;
-        <Welcome name="Sara" />;
-        <Welcome name="Priya" />;
-        <Comment
-          date={comment.date}
-          text={comment.text}
-          author={comment.author} />                                                                                                              
-      </div>
-  )
-}
-// const element = <Welcome name="Sara" />;
-ReactDom.render(
-  <App/>,
-  document.getElementById('root')
-);
-// var name = "Purnima";
-// ReactDom.render(<MusicApp person={name} color={"text-primary"}/> , document.getElementById("container"));
-
-
-/*function printMessage(person) {
-  console.log("Welcome"+ person);
-}
-
-var name = "ashwin";
-*/
