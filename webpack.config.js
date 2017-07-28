@@ -13,6 +13,7 @@ var config = {
             react: lib_dir + '/react',
             "react-dom": lib_dir + '/react-dom',
             "jquery": lib_dir + '/jquery-3.2.1.js'
+            
         }
     },
     plugins: [
